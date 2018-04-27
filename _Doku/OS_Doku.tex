@@ -1,0 +1,218 @@
+\documentclass[
+10pt, % Main document font size
+a4paper, % Paper type, use 'letterpaper' for US Letter paper
+oneside, % One page layout (no page indentation)
+%twoside, % Two page layout (page indentation for binding and different headers)
+headinclude,footinclude, % Extra spacing for the header and footer
+BCOR5mm, % Binding correction
+]{scrartcl}
+
+\usepackage{listings}
+\usepackage{color}
+%\usepackage{biblatex}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+	language={},
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\usepackage{german}
+
+
+%usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+\usepackage[german,onelanguage,linesnumbered, ruled]{algorithm2e}
+\SetAlFnt{\small}
+\SetAlCapFnt{\large}
+\SetAlCapNameFnt{\large}
+%\usepackage{algpseudocode}
+
+
+\input{structure.tex} % Include the structure.tex file which specified the document structure and layout
+
+\hyphenation{Fortran hy-phen-ation} % Specify custom hyphenation points in words with dashes where you would like hyphenation to occur, or alternatively, don't put any dashes in a word to stop hyphenation altogether
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHOR(S)
+%----------------------------------------------------------------------------------------
+
+\title{\normalfont\spacedallcaps{Projektaufgabe AE}} % The article title
+
+\subtitle{Remove Duplicates - Spotify playlist cleaner} % Uncomment to display a subtitle
+
+\author{\spacedlowsmallcaps{Raphael Drechsler}} % The article author(s) - author affiliations need to be specified in the AUTHOR AFFILIATIONS block
+
+\date{} % An optional date to appear under the author(s)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	HEADERS
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\sectionmark}[1]{\markright{\spacedlowsmallcaps{#1}}} % The header for all pages (oneside) or for even pages (twoside)
+%\renewcommand{\subsectionmark}[1]{\markright{\thesubsection~#1}} % Uncomment when using the twoside option - this modifies the header on odd pages
+\lehead{\mbox{\llap{\small\thepage\kern1em\color{halfgray} \vline}\color{halfgray}\hspace{0.5em}\rightmark\hfil}} % The header style
+
+\pagestyle{scrheadings} % Enable the headers specified in this block
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS & LISTS OF FIGURES AND TABLES
+%----------------------------------------------------------------------------------------
+
+%\maketitle % Print the title/author/date block
+{ \centering
+{ \par}\
+ \linebreak
+\linebreak 
+\linebreak
+\linebreak
+\linebreak
+%\centering
+\includegraphics[width=0.55\columnwidth]{htwLogo} 
+\linebreak
+\linebreak
+\linebreak
+\linebreak 
+ % inline
+{\fontsize{14}{16}\selectfont \center Fakultät Informatik, Mathematik und\\Naturwissenschaften\\Studiengang Informatik Master\par}\
+ \linebreak
+{\fontsize{18}{20}\selectfont \center \textbf{Abstrakt zum Oberseminar\\Datenbanksysteme: Aktuelle Trends}\par}\
+{\fontsize{20}{22}\selectfont \center \textbf{Data Lakes} \par}\
+\linebreak
+\linebreak
+\linebreak
+\linebreak 
+\linebreak
+\linebreak 
+\linebreak 
+{\fontsize{14}{16}\selectfont  \begin{tabular}{rl}
+ 	\textbf{Autor:} & Raphael Drechsler\\ 
+ 	\textbf{Matrikelnr.:} &  69872\\ 
+ 	\textbf{Abgabedatum:} & ??.??.2018 \\ 
+ \end{tabular}
+\par}
+\par}
+\pagebreak
+\setcounter{tocdepth}{2} % Set the depth of the table of contents to show sections and subsections only
+
+%\tableofcontents % Print the table of contents
+%\listoffigures % Print the list of figures
+%\listoftables % Print the list of tables
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\newpage % Start the article content on the second page, remove this if you have a longer abstract that goes onto the second page
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+\section{Motivation - Tauchen Sie ein!}\
+\textbf{DRT:}
+
+Begriff ist 2010 entstanden und in den letzten Jahren gehyped (Quellen 1,2,3)\\
+Anschließend gab es Kritik bis hin zu einem Artikel über Fake News? (Quelle 4)\\
+Zum Zeitpunkt der Rechereche kein deutsch-Sprachiger Artikel auf Wiki\\
+Motivation besteht darin diese Unklarheiten zu beleuchten, klären was ein Data-Lake ist und sich mit der Frage ''Fake-News'' auseinanderzusetzen.
+
+
+\section{Definitionsfrage ''Data Lake''}\
+\textbf{DRT:}
+
+Kein Akademischer Ursprung. Dixon hat's gemacht.
+\subsection{Definition nach Dixon}
+Quellen: 5,6
+\subsection{Pentaho-Architektur 2010}
+Quellen: 6
+\subsection{Begriffs-Chaos}
+Quellen: 7
+
+\section{Wie funktioniert ein Data Lake?}
+\subsection{Aufbau}
+QUELLEN : 8, 9
+\subsection{Workflow}
+Allgemein und die Rolle des Data Scientist
+QUELLEN : 8, 9
+\paragraph{Storage}
+QUELLEN : 8, ?
+\paragraph{Ingestion}
+QUELLEN : 8, 10, 11
+\paragraph{Process}
+QUELLEN : 8, 12
+\paragraph{Consumption}
+QUELLEN : 8, 12
+\paragraph{Monitoring}
+QUELLEN : 8, ?
+\paragraph{Data Governance}
+QUELLEN : 8, 12
+
+
+\section{Data Swamps: Kritik am Data Lake}
+Mögliche Darstellungen die es so gibt:
+\begin{itemize}
+	\item Sumpf
+	\item Finnland
+	\item Flohmarkt
+\end{itemize}
+
+Gartners wesentliche Punkte\\
+
+Battle: Gartner vs. Dixon und \\
+QUELLEN : 3, 12, 13\\
+DL revisited $\rightarrow$ ungenaue Definition ein Problem zu kritisieren oder nur ein Kritikpunkt?\\
+Quellen: 14,15,
+
+In Praxis dann Sean Martin zitieren.\\
+Trend des Vorsichtiger werdens und die Flut kommen sehen. Paradigmenwechsel.
+Quelle: 1
+
+\section{Fake-News! Existieren Data Lakes überhaupt?}
+Blogeintrag nur nennen und erste Zeile zitieren.\\
+Quelle: 4
+
+Nach Recherche lassen sich da schon ein paar Firmen finden, die Data Lake Lösungen anbieten.
+$\rightarrow$auflisten
+
+
+Nach weiterer Recherche auch success-stories auffindbar. Also irgendwie schon.
+
+
+Die wesentliche Frage ist allerdings die Definitionsfrage. Selber Schluss im Blogeintrag. Lösung die dem Paradigma grundlegend folgen gibt es. Jetzt im Auge des Betrachters ob man das Kind beim Namen nennt oder nicht.
+
+
+\pagebreak
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\refname}{\spacedlowsmallcaps{Literatur/Quellen}} % For modifying the bibliography heading
+
+\bibliographystyle{unsrt}
+
+\bibliography{bib.bib} % The file containing the bibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

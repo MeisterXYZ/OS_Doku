@@ -1,0 +1,41 @@
+\begin{thebibliography}{1}
+
+\bibitem{Cormen:2009:IAT:1614191}
+Thomas~H. Cormen, Charles~E. Leiserson, Ronald~L. Rivest, and Clifford Stein.
+\newblock {\em Introduction to Algorithms, Third Edition}.
+\newblock The MIT Press, 3rd edition, 2009.
+
+\bibitem{TimeComplexityPy}
+Jonathan Hartley.
+\newblock Time complexity - python wiki.
+\newblock \url{https://wiki.python.org/moin/TimeComplexity}.
+\newblock Zuletzt bearbeitet: 05.06.2017, Zugriff: 01.02.2018.
+
+\bibitem{SptfyTrackID}
+Spotify uris and ids - spotify web api user guide.
+\newblock
+  \url{https://developer.spotify.com/web-api/user-guide/#spotify-uris-and-ids}.
+\newblock Zugriff: 01.02.2018.
+
+\bibitem{API}
+A java wrapper/client for the spotify web api.
+\newblock \url{https://github.com/thelinmichael/spotify-web-api-java}.
+
+\bibitem{CPROF}
+The python standard library documentation - 26.4.3. profile and cprofile module
+  reference.
+\newblock \url{https://docs.python.org/2/library/profile.html#module-cProfile}.
+\newblock Zugriff: 01.02.2018.
+
+\bibitem{SNAKE}
+Snakeviz - a browser based graphical viewer for the output of python’s
+  cprofile module.
+\newblock \url{https://jiffyclub.github.io/snakeviz/}.
+
+\bibitem{TIME}
+The python standard library documentation - 15.3. time — time access and
+  conversions.
+\newblock \url{https://docs.python.org/2/library/time.html#time.time}.
+\newblock Zugriff: 02.02.2018.
+
+\end{thebibliography}

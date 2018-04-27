@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Problemstellung ''Remove Duplicates''}{3}{section.1}
+\contentsline {section}{\numberline {2}Anwendungsszenario Spotify Playlists}{5}{section.2}
+\contentsline {section}{\numberline {3}Funktionsweisen der Algorithmen}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Funktionsweise Haupt-Algorithmus: dict-like}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Funktionsweise Vergleichs-Algorithmus 1: Naiver Ansatz}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Funktionsweise Vergleichs-Algorithmus 2: python dict}{7}{subsection.3.3}
+\contentsline {section}{\numberline {4}Messdaten}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Test-Daten-Generator}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Echt-Daten}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Skalieren der Daten-Listen}{9}{subsection.4.3}
+\contentsline {section}{\numberline {5}Vorbereiten der Messungen}{9}{section.5}
+\contentsline {subsection}{\numberline {5.1}Profiling und Optimierung Haupt-Algorithmus}{10}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Profiling und Optimierung Vergleichs-Algorithmus 1}{11}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Profiling und Optimierung Vergleichs-Algorithmus 2}{12}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Wie wird gemessen?}{12}{subsection.5.4}
+\contentsline {section}{\numberline {6}Vergleich Echt vs. Test-Daten}{13}{section.6}
+\contentsline {section}{\numberline {7}Vergleich mit theoretischer Laufzeit}{15}{section.7}
+\contentsline {subsection}{\numberline {7.1}Haupt-Algorithmus}{15}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Vergleichs-Algorithmus 1}{16}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Vergleichs-Algorithmus 2}{16}{subsection.7.3}
+\contentsline {section}{\numberline {8}Vergleich der Algorithmen}{18}{section.8}
+\contentsline {subsection}{\numberline {8.1}Grafischer Vergleich}{18}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Statistischer Hypothesen-Test}{19}{subsection.8.2}
+\contentsline {section}{\numberline {9}Fazit}{21}{section.9}
