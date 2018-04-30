@@ -108,8 +108,8 @@ Dixon's Erläuterung des Prinzips beginnen damit, dass er durch Pentaho betracht
 \begin{itemize}
 	\item Es liegt ein großes Datenvolumen vor, welches zu analysieren ist
 	\item Die Daten entspringen einer Quelle
-	\item Die Daten liegen in ihrer rohen Form vor (können also strukturiert, semi-strukturiert und un-strukturiert sein)
-	\item ggf. sind die Daten angereichert (bspw. Anreichern von Weblogs um Geocodes)
+	\item Die Daten liegen in ihrer rohen Form vor \textit{(können also strukturiert, semi-strukturiert und un-strukturiert sein)}
+	\item ggf. sind die Daten angereichert \textit{(bspw. Anreichern von Weblogs um Geocodes)}
 \end{itemize}
 
 \noindent Liegt ein Daten-Volumen vor, auf welches diese Eigenschaften zutreffen, handelt es sich Dixon nach um einen Data Lake. Im Weiteren nennt Dixon zusätzliche Eigenschaften eines solchen Data Lakes. Im Kern der Betrachtung steht dabei, dass der Data Lake als Datenvolumen verschiedenen Anwendern über verschiedene Unternehmensbereiche bekannte und unbekannte (wenn auch kleinere) Fragen beantworten kann und es daher sinnvoll ist, dieses Datenvolumen für spätere Analysen abzuspeichern.\\
@@ -118,75 +118,81 @@ Der von Dixon ausgeführte bildliche Vergleich macht diesen Umstand und die Vors
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=0.4\textwidth]{img/p1} 
-	\caption[DRT]{DRT \textit{nach} \cite{src6}}	
+	\caption{Data Marts als Wasserflaschen \textit{nach} \cite{src6}}	
 \end{figure}
 
 Die Verbildlichung setzt bei den Data Marts an und stellt diese als fertig abgefüllte Mineralwasser-Flaschen dar. Das Wasser für diese Flaschen wurde aus einer Datenquelle gewonnen, bereinigt, aufbereitet und für den finalen Verwendungszweck abgepackt. Der Teil des Wassers (der Großteil), welcher nicht in die Data Marts eingegangen ist, fließt einfach ab. (Siehe Abb. 1)\\
-Das Konzept des Data Lakes setzt an dieser Stelle an. Unter der Annahme, dass auch der Teil des Wassers, welcher abfließt, wertvolle Informationen enthalten kann, wird das Datenvolumen als Data Lake persistiert. Aus diesem lassen sich dann die Data Marts beliefern. Zusätzlich ist es dadurch möglich per Ad-Hoc-Query oder Report direkt auf das Datenvolumen zuzugreifen und somit zuvor unbekannte Fragen beantworten zu können. Zudem können Data Lakes wiederrum als Datenquellen für Data Warehouses genutzt werden. Es ergit sich das folgende Bild:
-
+Das Konzept des Data Lakes setzt an dieser Stelle an. Unter der Annahme, dass auch der Teil der Daten, welcher abfließt, wertvolle Informationen enthalten kann, wird das Datenvolumen als Data Lake persistiert. Aus diesem lassen sich die Data Marts beliefern. Zusätzlich ist es durch das Speichern möglich, per Ad-Hoc-Query oder Report direkt auf das Datenvolumen zuzugreifen und somit zuvor unbekannte Fragen beantworten zu können. Zudem können Data Lakes wiederum als Datenquellen für Data Warehouses genutzt werden. Es ergibt sich das folgende Bild:
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=0.4\textwidth]{img/p2} 
-	\caption[DRT]{DRT \textit{nach} \cite{src6}}	
+	\caption{Verbildlichung des Data Lakes \textit{nach} \cite{src6}}	
 \end{figure}
 
-
-Anmerkung zu extra-Pfeilen Data-Mart
-
-Entsprechend folgt die Pentaho-Architektur 2010.
-
+\noindent Diesem Prinzip folgend stellt Dixon die folgende Architektur der Pentaho-Solution vor.
 \begin{figure}[h]
 	\centering 
-	\includegraphics[width=0.4\textwidth]{img/p3} 
-	\caption[DRT]{DRT \textit{nach} \cite{src6b}}	
+	\includegraphics[width=0.47\textwidth]{img/p3} 
+	\caption{Architektur Pentaho-Solution 2010 \cite{src6b}}	
 \end{figure}
 
-Die drei Schichten werden hier erstmalig gezeigt und sind klar.
-
-Damit wars das an Definition. Niocht sehr genau. Weitere Unterkonzepte und Lösungen entstanden. Es gibt keinen einheitlichen Begriff.\cite{src7}
+\noindent Dabei finden sich die Elemente des Prinzips in den drei Schichten der Architektur (Load, Optimize und Visualize) wieder.\cite{src6}\cite{src6b} \\
+Im weiteren Verlauf der Video-Strecke zur Solution geht Dixon auf die einzelnen Komponenten und deren Funktionsweisen ein. Im Wesentlichen ist die Definition des Data Lakes durch Dixon bzw. Pentaho an diesem Punkt abgeschlossen.\\
+Da die Definition einigen Raum für Interpretation lässt, wurde der Begriff im Laufe der folgenden Jahre von verschiedenen Seiten unterschiedlich aufgefasst und teilweise neu interpretiert. Heute gibt es keinen einheitlichen Begriff des Data Lakes mehr.\cite{src7}
 
 \section{Wie funktioniert ein Data Lake?}
-Begriffe die sich gefestigt haben.
+Über die verschiedenen Lösungen und Konzepte, die zu Data-Lake-Solutions existieren, gibt es einige Gemeinsamkeiten. Diese sollen im folgenden betrachtet werden.
 
 \paragraph{Aufbau und Workflow}
-Aufbau
-Analog zu Dixon Aufbau in drei Schichten.\cite{src8} \cite{src9}
+Der Aufbau einer Data-Lake-Solution ist zu der von Dixon dargestellten Architektur analog.
+Die Architektur besteht aus den folgenden drei Schichten.\cite{src8} \cite{src9}
 \begin{itemize}
-	\item F
-	\item P u S
-	\item Viz
+	\item Data Sources: \textit{Umfasst die Quell-Systeme bzw. Data-Streams inkl. der Daten, die das Daten-Volumen (den Data Lake) bilden}
+	\item Processing and Storage-Layer: \textit{Schicht zum Speichern und weiterverarbeiten des Daten-Volumens/Data Lakes} 
+	\item Visualisation-Layer: \textit{Schicht in welcher die Daten aus dem DWH visualisiert werden oder/und eine Oberfläche für das Abfragen von Ad-Queries bereitgestellt wird. Weitere Komponenten und Formen der Visualisierung sind hierbei denkbar.}
 \end{itemize}
-Dabei wird P und S gelegentlich synonym als Data Lake bezeichnet, was von Dixon abweicht.
 
-Workflow
+Dabei wird die Processing and Storage-Layer gelegentlich als der Data Lake bezeichnet (vgl. bspw. \cite{mdb}), was von Dixons Definition des Data Lakes als Datenvolumen (und nicht als Speicherort) abweicht.\\
 
-Zusammengefasst wiefolgt:
+
+Der Workflow in einer Data-Lake-Solution lässt sich wie folgt skizzieren. Dabei können die der Processing and Storage-Layer nachgelagerten Komponenten je nach betrachteter Solution variieren.
 
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=0.4\textwidth]{img/p4} 
-	\caption[DRT]{DRT \textit{nach} \cite{src9}}	
+	\caption{DRT \textit{nach} \cite{src9}}	
 \end{figure}
 
+Die Daten durchlaufen in diesem Prozess die folgenden Schritte.
+\begin{itemize}
+	\item Ingestion: \textit{(engl. für Aufnehmen). Die Daten werden aus den Quell-Systemen bzw. Data-Streams in die Processing and Storage-Layer geladen.}
+	\item Processing: \textit{Das persistierte Datenvolumen wird soweit aufbereitet, dass es für Analysen, Abfragen und schließlich Reports verwendet werden kann. Die Aufbereitung wird durch die Rolle des Data Scientist, welche für das .....DRT \cite{src8}} 
+	\item Bereitstellung für konsumierende Systeme \textit{Die aufbereiteten Daten werden nun den nachgelagerten Systemen bereitgestellt.}
+\end{itemize}
+Wie sich an diesen Prozess die Visualisierung anschließt, ist sehr Kunden- bzw. Anbieter-individuell und variiert von Solution zu Solution.
 
-Brauchen Daten nach DL\\
-Brauchen aufbereiten des Wassers. Hierbei spielt die Rolle des Data Scientist eine Rolle.\cite{src8}\\
-Dann zur Verfügung stellen\\
-Oben: Visaulisierung. Was dabei visualisiert wird variiert von Sol zu Sol.
+\paragraph{Detailfragen im Workflow}
+\begin{itemize}
+	\item Storage: \textit{lol}
+	\item Ingestion: \textit{lol}
+	\item Process: \textit{lol}
+	\item Consumption: \textit{lol}
+	\item Monitoring: \textit{lol}
+	\item Data Governance: \textit{lol}
+\end{itemize}
 
-
-\paragraph{Storage}
-QUELLEN : 8, ?
-\paragraph{Ingestion}
-QUELLEN : 8, 10, 11
-\paragraph{Process}
-QUELLEN : 8, 12
-\paragraph{Consumption}
-QUELLEN : 8, 12
-\paragraph{Monitoring}
-QUELLEN : 8, ?
-\paragraph{Data Governance}
-QUELLEN : 8, 12
+%\paragraph{Storage}
+%QUELLEN : 8, ?
+%\paragraph{Ingestion}
+%QUELLEN : 8, 10, 11
+%\paragraph{Process}
+%QUELLEN : 8, 12
+%\paragraph{Consumption}
+%QUELLEN : 8, 12
+%\paragraph{Monitoring}
+%QUELLEN : 8, ?
+%\paragraph{Data Governance}
+%QUELLEN : 8, 12
 
 
 \section{Data Swamps: Kritik am Data Lake}
