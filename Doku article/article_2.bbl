@@ -43,6 +43,11 @@ James Dixon.
 \newblock \url{https://www.youtube.com/watch?v=tR_yLsr87Uk}.
 \newblock Upload: 24.10.2012, Zugriff: 29.04.2018.
 
+\bibitem{Cormen:2009:IAT:1614191}
+Thomas~H. Cormen, Charles~E. Leiserson, Ronald~L. Rivest, and Clifford Stein.
+\newblock {\em Introduction to Algorithms, Third Edition}.
+\newblock The MIT Press, 3rd edition, 2009.
+
 \bibitem{src7}
 Lance Weaver.
 \newblock Why companies are jumping into data lakes.
@@ -61,18 +66,11 @@ Bhushan Satpute.
 \newblock \url{https://www.youtube.com/watch?v=hsq4s_l9ZDM&t=380s}.
 \newblock Upload: 28.03.2016, Zugriff: 29.04.2018.
 
-\bibitem{src10}
-Nathan Marz.
-\newblock How to beat the cap theorem.
-\newblock \url{http://nathanmarz.com/blog/how-to-beat-the-cap-theorem.html}.
-\newblock Veröffentlicht: 13.10.2011, Zugriff: 29.04.2018.
-
-\bibitem{src11}
-Jay Kreps.
-\newblock Questioning the lambda architecture.
-\newblock
-  \url{https://www.oreilly.com/ideas/questioning-the-lambda-architecture}.
-\newblock Veröffentlicht: 02.07.2014, Zugriff: 29.04.2018.
+\bibitem{src13}
+Martin Willcox.
+\newblock What is a data lake, anyway.
+\newblock \url{https://www.youtube.com/watch?v=NO0r452uQM0&t=835s}.
+\newblock Upload: 10.02.2015, Zugriff: 29.04.2018.
 
 \bibitem{src12}
 Alex Gorelik.
@@ -80,11 +78,11 @@ Alex Gorelik.
 \newblock \url{https://www.youtube.com/watch?v=zHokpz3qNJ8&t=610s}.
 \newblock Upload: 29.06.2016, Zugriff: 29.04.2018.
 
-\bibitem{src13}
-Martin Willcox.
-\newblock What is a data lake, anyway.
-\newblock \url{https://www.youtube.com/watch?v=NO0r452uQM0&t=835s}.
-\newblock Upload: 10.02.2015, Zugriff: 29.04.2018.
+\bibitem{src15}
+James Dixon.
+\newblock Pentaho hadoop series part 5: Big data and data warehouses.
+\newblock \url{https://www.youtube.com/watch?v=1CG01JmKp2Y&t=2s}.
+\newblock Upload: 24.10.2012, Zugriff: 29.04.2018.
 
 \bibitem{src14}
 James Dixon.
@@ -92,11 +90,5 @@ James Dixon.
 \newblock
   \url{https://jamesdixon.wordpress.com/2014/09/25/data-lakes-revisited/}.
 \newblock Veröffentlicht: 25.09.2014, Zugriff: 29.04.2018.
-
-\bibitem{src15}
-James Dixon.
-\newblock Pentaho hadoop series part 5: Big data and data warehouses.
-\newblock \url{https://www.youtube.com/watch?v=1CG01JmKp2Y&t=2s}.
-\newblock Upload: 24.10.2012, Zugriff: 29.04.2018.
 
 \end{thebibliography}

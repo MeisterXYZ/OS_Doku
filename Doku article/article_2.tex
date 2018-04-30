@@ -62,6 +62,7 @@
 
 
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
@@ -86,7 +87,7 @@
 \renewcommand{\maketitlehookd}{%
 \begin{abstract}
 \noindent 
-Der Begriff des Data Lakes ist 2010 entstanden und wurde in den letzten Jahren stark ''gehyped''.\cite{src1} \cite{src2} \cite{src3} Es haben sich viele verschiedene Konzepte und Ansichten zum Thema entwickelt. Im Internet findet man bei einer Recherche zum Thema Data Lake von einem existierneden Unternehmen, welches sich ''the Data-Lake-Company'' nennt\cite{dlc}, bis hin zu einem Blogeintrag, der die Frage ''Are Data Lakes Fake-News?'' mit ja beantwortet\cite{src4} eine ganze Menge. Dabei wird die Frage danach, was ein Data Lake ist, von den verscheidenen Quellen nicht eindutig beantwortet. Auch gibt es zum Zeitpunkt des Erstellen dieses Dokumentes in der deutschsprachigen Wikipedia nock keinen Eintrag zu diesem Thema. Die Motivation dieses Abstracts besteht also darin, die bestehenden Unklarheiten zu beleuchten; zu klären was ein Data-Lake ist und sich mit der Frage ''Are Data Lakes Fake-News'' auseinanderzusetzen.
+Der Begriff des Data Lakes ist 2010 entstanden und wurde in den letzten Jahren stark ''gehyped''.\cite{src1} \cite{src2} \cite{src3} Es haben sich viele verschiedene Konzepte und Ansichten zum Thema entwickelt. Im Internet findet man bei einer Recherche zum Thema Data Lake von einem existierneden Unternehmen, welches sich ''the Data-Lake-Company'' nennt\cite{dlc}, bis hin zu einem Blogeintrag, der die Frage ''Are Data Lakes Fake-News?'' mit ja beantwortet\cite{src4} eine ganze Menge. Dabei wird die Frage danach, was ein Data Lake ist, von den verscheidenen Quellen nicht eindutig beantwortet. Auch gibt es zum Zeitpunkt des Erstellens dieses Dokumentes in der deutschsprachigen Wikipedia nock keinen Eintrag zu diesem Thema. Die Motivation dieses Abstracts besteht also darin, die bestehenden Unklarheiten zu beleuchten; zu klären was ein Data-Lake ist und sich mit der Frage ''Are Data Lakes Fake-News'' auseinanderzusetzen.
 \end{abstract}
 }
 
@@ -118,18 +119,33 @@ Also Datenvolumen.
 Späeter wird er drutlicher und führt das folgende Bild an:\\
 Wenn Data-Mart = Wasserflasche\\
 Wasser aus Datenqeulle, rest fließt ab \\
--->hier ein Bild<---\cite{src6}\\
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.4\textwidth]{img/p1} 
+	\caption[DRT]{DRT \textit{nach} \cite{src6}}	
+\end{figure}
 
 Paradigma: Wissen nich wie wertvoll das ist, was da abgeht.
 Also: Wasser in See, daraus Data Marts, auch Ad Hoc und DWH\\
 
--->hier ein Bild<---\cite{src6}\\
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.4\textwidth]{img/p2} 
+	\caption[DRT]{DRT \textit{nach} \cite{src6}}	
+\end{figure}
+
 
 Anmerkung zu extra-Pfeilen Data-Mart
 
 Entsprechend folgt die Pentaho-Architektur 2010.
 
--->hier ein Bild<---\cite{src6}\\
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.4\textwidth]{img/p3} 
+	\caption[DRT]{DRT \textit{nach} \cite{src6}}	
+\end{figure}
+
 Die drei Schichten werden hier erstmalig gezeigt und sind klar.
 
 Damit wars das an Definition. Niocht sehr genau. Weitere Unterkonzepte und Lösungen entstanden. Es gibt keinen einheitlichen Begriff.\cite{src7}
@@ -150,7 +166,13 @@ Dabei wird P und S gelegentlich synonym als Data Lake bezeichnet, was von Dixon 
 Workflow
 
 Zusammengefasst wiefolgt:
-<hier ein bild workflow nach quelle>\cite{src9}\\
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.4\textwidth]{img/p4} 
+	\caption[DRT]{DRT \textit{nach} \cite{src9}}	
+\end{figure}
+
 
 Brauchen Daten nach DL\\
 Brauchen aufbereiten des Wassers. Hierbei spielt die Rolle des Data Scientist eine Rolle.\cite{src8}\\
