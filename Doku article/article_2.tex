@@ -103,22 +103,17 @@ Der Begriff des Data Lakes ist 2010 entstanden und wurde in den letzten Jahren s
 %----------------------------------------------------------------------------------------
 
 \section{Definitionsfrage ''Data Lake''}
-\lettrine[nindent=0em,lines=2]{J} etzt gehts los.
-\textbf{DRT:}
-Kein Akademischer Ursprung. Dixon hats gemacht. Quellen sind dabei sein Blog\cite{src5} und YT\cite{src6}. Bei YT wird das Produkt von Pentaho vorgestellt. In diesem Rahmen wird der Begriff geboren.
-Dixon's Betrachtung beginnt datmit, dass Dixon Big-Data Szenarios betrachtet. Feststellen von Eigenschaften. Diese sind:
+\lettrine[nindent=0em,lines=2]{D}er Begriff des Data Lakes wurde erstmalig von James Dixon (CTO von Pentaho \footnote{Pentaho gehört seit September 2017 dem Unternehmen Hitachi Vantara an}) geprägt. Auf seinem Blog \cite{src5}  und in mehren auf Youtube veröffentlichten Videos \cite{src6} stellt Dixon damals die von Pentaho angebotene Hadoop-basierte Big-Data-Lösung vor. Im Rahmen dieser Vorstellung stellt er auch das Prinzip vor, auf welchem die Solution basiert: Den Data Lake.\\
+Dixon's Erläuterung des Prinzips beginnen damit, dass er durch Pentaho betrachtete Big-Data-Szenarien betrachtet und folgende gemeinsame Eigenschaften ableitet. 
 \begin{itemize}
-	\item bla
-	\item lo
-	\item li
+	\item Es liegt ein großes Datenvolumen vor, welches zu analysieren ist
+	\item Die Daten entspringen einer Quelle
+	\item Die Daten liegen in ihrer rohen Form vor (können also strukturiert, semi-strukturiert und un-strukturiert sein)
+	\item ggf. sind die Daten angereichert (bspw. Anreichern von Weblogs um Geocodes)
 \end{itemize}
 
-Dazu noch im Wesentlichen die Eigenschafen, dass unbekannte Fragen beantw können und keine 1 mio und verscheidene Anwender Bisschen das kleinfieh Prinzip
-Also Datenvolumen.
-
-Späeter wird er drutlicher und führt das folgende Bild an:\\
-Wenn Data-Mart = Wasserflasche\\
-Wasser aus Datenqeulle, rest fließt ab \\
+\noindent Liegt ein Daten-Volumen vor, auf welches diese Eigenschaften zutreffen, handelt es sich Dixon nach um einen Data Lake. Im Weiteren nennt Dixon zusätzliche Eigenschaften eines solchen Data Lakes. Im Kern der Betrachtung steht dabei, dass der Data Lake als Datenvolumen verschiedenen Anwendern über verschiedene Unternehmensbereiche bekannte und unbekannte (wenn auch kleinere) Fragen beantworten kann und es daher sinnvoll ist, dieses Datenvolumen für spätere Analysen abzuspeichern.\\
+Der von Dixon ausgeführte bildliche Vergleich macht diesen Umstand und die Vorstellung davon, was ein Data Lake ist, noch deutlicher.
 
 \begin{figure}[h]
 	\centering 
@@ -126,8 +121,8 @@ Wasser aus Datenqeulle, rest fließt ab \\
 	\caption[DRT]{DRT \textit{nach} \cite{src6}}	
 \end{figure}
 
-Paradigma: Wissen nich wie wertvoll das ist, was da abgeht.
-Also: Wasser in See, daraus Data Marts, auch Ad Hoc und DWH\\
+Die Verbildlichung setzt bei den Data Marts an und stellt diese als fertig abgefüllte Mineralwasser-Flaschen dar. Das Wasser für diese Flaschen wurde aus einer Datenquelle gewonnen, bereinigt, aufbereitet und für den finalen Verwendungszweck abgepackt. Der Teil des Wassers (der Großteil), welcher nicht in die Data Marts eingegangen ist, fließt einfach ab. (Siehe Abb. 1)\\
+Das Konzept des Data Lakes setzt an dieser Stelle an. Unter der Annahme, dass auch der Teil des Wassers, welcher abfließt, wertvolle Informationen enthalten kann, wird das Datenvolumen als Data Lake persistiert. Aus diesem lassen sich dann die Data Marts beliefern. Zusätzlich ist es dadurch möglich per Ad-Hoc-Query oder Report direkt auf das Datenvolumen zuzugreifen und somit zuvor unbekannte Fragen beantworten zu können. Zudem können Data Lakes wiederrum als Datenquellen für Data Warehouses genutzt werden. Es ergit sich das folgende Bild:
 
 \begin{figure}[h]
 	\centering 
@@ -143,7 +138,7 @@ Entsprechend folgt die Pentaho-Architektur 2010.
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=0.4\textwidth]{img/p3} 
-	\caption[DRT]{DRT \textit{nach} \cite{src6}}	
+	\caption[DRT]{DRT \textit{nach} \cite{src6b}}	
 \end{figure}
 
 Die drei Schichten werden hier erstmalig gezeigt und sind klar.
