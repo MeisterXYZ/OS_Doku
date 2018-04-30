@@ -18,6 +18,12 @@ Rob van der~Meulen Janessa~Rivera.
 \newblock \url{https://www.gartner.com/newsroom/id/2809117}.
 \newblock Veröffentlicht: 28.07.2014, Zugriff: 29.04.2018.
 
+\bibitem{dlc}
+Zaloni.
+\newblock Zaloni homepage.
+\newblock \url{https://www.zaloni.com}.
+\newblock Zugriff: 30.04.2018.
+
 \bibitem{src4}
 Uli Bethke.
 \newblock Are data lakes fake news?
@@ -35,7 +41,7 @@ James Dixon.
 James Dixon.
 \newblock Pentaho hadoop series part 1: Big data architecture.
 \newblock \url{https://www.youtube.com/watch?v=tR_yLsr87Uk}.
-\newblock Upload: 24.10.2012, Zugriff: 01.02.2018.
+\newblock Upload: 24.10.2012, Zugriff: 29.04.2018.
 
 \bibitem{src7}
 Lance Weaver.
@@ -53,7 +59,7 @@ Christian Mathis.
 Bhushan Satpute.
 \newblock Enterprise data lake: Architecture using big data technologies.
 \newblock \url{https://www.youtube.com/watch?v=hsq4s_l9ZDM&t=380s}.
-\newblock Upload: 28.03.2016, Zugriff: 01.02.2018.
+\newblock Upload: 28.03.2016, Zugriff: 29.04.2018.
 
 \bibitem{src10}
 Nathan Marz.
@@ -72,13 +78,13 @@ Jay Kreps.
 Alex Gorelik.
 \newblock How to build a successful data lake: Talk at hadoop summit 2016.
 \newblock \url{https://www.youtube.com/watch?v=zHokpz3qNJ8&t=610s}.
-\newblock Upload: 29.06.2016, Zugriff: 01.02.2018.
+\newblock Upload: 29.06.2016, Zugriff: 29.04.2018.
 
 \bibitem{src13}
 Martin Willcox.
 \newblock What is a data lake, anyway.
 \newblock \url{https://www.youtube.com/watch?v=NO0r452uQM0&t=835s}.
-\newblock Upload: 10.02.2015, Zugriff: 01.02.2018.
+\newblock Upload: 10.02.2015, Zugriff: 29.04.2018.
 
 \bibitem{src14}
 James Dixon.
@@ -91,6 +97,6 @@ James Dixon.
 James Dixon.
 \newblock Pentaho hadoop series part 5: Big data and data warehouses.
 \newblock \url{https://www.youtube.com/watch?v=1CG01JmKp2Y&t=2s}.
-\newblock Upload: 24.10.2012, Zugriff: 01.02.2018.
+\newblock Upload: 24.10.2012, Zugriff: 29.04.2018.
 
 \end{thebibliography}
