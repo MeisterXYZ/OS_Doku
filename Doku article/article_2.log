@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.7)  30 APR 2018 18:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.7)  1 MAY 2018 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -695,27 +695,27 @@ File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 (./article_2.aux)
 \openout1 = `article_2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Try loading font information for T1+pplx on input line 96.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 98.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pplx.fd
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 )
 \big@size=\dimen161
-LaTeX Info: Redefining \microtypecontext on input line 96.
+LaTeX Info: Redefining \microtypecontext on input line 98.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -768,7 +768,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 96.
+Package hyperref Info: Link coloring OFF on input line 98.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -777,9 +777,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 96.
-LaTeX Info: Redefining \pageref on input line 96.
-LaTeX Info: Redefining \nameref on input line 96.
+LaTeX Info: Redefining \ref on input line 98.
+LaTeX Info: Redefining \pageref on input line 98.
+LaTeX Info: Redefining \nameref on input line 98.
 
 (./article_2.out) (./article_2.out)
 \@outlinefile=\write3
@@ -817,32 +817,32 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 100.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 100
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 102.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 102
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 100
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 102
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 100
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 102
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 100
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 102
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 100
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 102
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -856,40 +856,40 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 100.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 102.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language append on input line 105.
+(babel)             in language append on input line 107.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language append on input line 105.
+(babel)             in language append on input line 107.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language append on input line 105.
+(babel)             in language append on input line 107.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 109
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 111
 .
-LaTeX Font Info:    No file OMSpplx.fd. on input line 109.
+LaTeX Font Info:    No file OMSpplx.fd. on input line 111.
 
 
 LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 109.
+(Font)              for symbol `textbullet' on input line 111.
 
 <img/p1.png, id=28, 731.73375pt x 460.72125pt>
 File: img/p1.png Graphic file (type png)
  <use img/p1.png>
-Package pdftex.def Info: img/p1.png used on input line 120.
+Package pdftex.def Info: img/p1.png used on input line 122.
 (pdftex.def)             Requested size: 171.99922pt x 108.29762pt.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 121.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 123.
 
 <img/p2.png, id=32, 2049.6575pt x 1331.97626pt>
 File: img/p2.png Graphic file (type png)
  <use img/p2.png>
-Package pdftex.def Info: img/p2.png used on input line 128.
+Package pdftex.def Info: img/p2.png used on input line 130.
 (pdftex.def)             Requested size: 171.99922pt x 111.76329pt.
 
-Underfull \hbox (badness 2229) in paragraph at lines 124--131
+Underfull \hbox (badness 2229) in paragraph at lines 126--133
 []\T1/pplx/m/n/10 (+20) Die Ver-bild-li-chung setzt bei den Da-ta
  []
 
@@ -897,17 +897,17 @@ Underfull \hbox (badness 2229) in paragraph at lines 124--131
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining german shorthand "f
-(babel)             in language append on input line 131.
+(babel)             in language append on input line 133.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language append on input line 131.
+(babel)             in language append on input line 133.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language append on input line 131.
+(babel)             in language append on input line 133.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language append on input line 131.
+(babel)             in language append on input line 133.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language append on input line 131.
+(babel)             in language append on input line 133.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language append on input line 131.
+(babel)             in language append on input line 133.
  [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -915,109 +915,131 @@ Package babel Info: Redefining german shorthand "~
 <img/p3.png, id=55, 1104.125pt x 561.09625pt>
 File: img/p3.png Graphic file (type png)
  <use img/p3.png>
-Package pdftex.def Info: img/p3.png used on input line 135.
+Package pdftex.def Info: img/p3.png used on input line 137.
 (pdftex.def)             Requested size: 202.10269pt x 102.70529pt.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language append on input line 143.
+(babel)             in language append on input line 145.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language append on input line 143.
+(babel)             in language append on input line 145.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language append on input line 143.
+(babel)             in language append on input line 145.
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
 Package babel Info: Redefining german shorthand "f
-(babel)             in language append on input line 159.
+(babel)             in language append on input line 161.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language append on input line 159.
+(babel)             in language append on input line 161.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language append on input line 159.
+(babel)             in language append on input line 161.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language append on input line 159.
+(babel)             in language append on input line 161.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language append on input line 159.
+(babel)             in language append on input line 161.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language append on input line 159.
+(babel)             in language append on input line 161.
 [2 <./img/p2.png> <./img/p3.png>]
 <img/p4.png, id=78, 956.57375pt x 443.6575pt>
 File: img/p4.png Graphic file (type png)
  <use img/p4.png>
-Package pdftex.def Info: img/p4.png used on input line 162.
+Package pdftex.def Info: img/p4.png used on input line 164.
 (pdftex.def)             Requested size: 171.99922pt x 79.77367pt.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language append on input line 198.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language append on input line 198.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language append on input line 198.
 
-Underfull \hbox (badness 1776) in paragraph at lines 209--211
+Underfull \hbox (badness 1997) in paragraph at lines 174--175
+\T1/pplx/m/n/10 (+20) an-schlieÿt va-ri-iert - je nach ein-ge-setz-ten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 189--190
+[] \T1/pplx/b/n/10 Con-sump-ti-on \T1/pplx/m/n/10 (+20) The-men wie Vi-sua-li-s
+ie-rung
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 191--192
+[] \T1/pplx/b/n/10 Mo-ni-to-ring \T1/pplx/m/n/10 (+20) Ein-satz von Moniitoring
+-Tool
+ []
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language append on input line 194.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language append on input line 194.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language append on input line 194.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language append on input line 194.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language append on input line 194.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language append on input line 194.
+[3 <./img/p4.png>]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language append on input line 196.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language append on input line 196.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language append on input line 196.
+
+Underfull \hbox (badness 1776) in paragraph at lines 206--208
 \T1/pplx/m/n/10 (+20) Dixon setzt sich zur Wehr. Ins-be-son-de-re
  []
 
 Package babel Info: Redefining german shorthand "f
-(babel)             in language append on input line 215.
+(babel)             in language append on input line 212.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language append on input line 215.
+(babel)             in language append on input line 212.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language append on input line 215.
+(babel)             in language append on input line 212.
 
-Underfull \hbox (badness 2671) in paragraph at lines 216--217
+Underfull \hbox (badness 2671) in paragraph at lines 213--214
 \T1/pplx/m/n/10 (+20) Blogeintrag nur nen-nen und er-ste Zei-le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 
-LaTeX Warning: Citation `c1' on page 3 undefined on input line 219.
+LaTeX Warning: Citation `c1' on page 4 undefined on input line 216.
 
 
-LaTeX Warning: Citation `c2' on page 3 undefined on input line 219.
+LaTeX Warning: Citation `c2' on page 4 undefined on input line 216.
 
 
-LaTeX Warning: Citation `c3' on page 3 undefined on input line 219.
+LaTeX Warning: Citation `c3' on page 4 undefined on input line 216.
 
 
-LaTeX Warning: Citation `ss1' on page 3 undefined on input line 222.
+LaTeX Warning: Citation `ss1' on page 4 undefined on input line 219.
 
 
-LaTeX Warning: Citation `ss2' on page 3 undefined on input line 222.
+LaTeX Warning: Citation `ss2' on page 4 undefined on input line 219.
 
 
-LaTeX Warning: Citation `ss3' on page 3 undefined on input line 222.
+LaTeX Warning: Citation `ss3' on page 4 undefined on input line 219.
 
 
-LaTeX Warning: Citation `ss4' on page 3 undefined on input line 222.
+LaTeX Warning: Citation `ss4' on page 4 undefined on input line 219.
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 221--223
+Underfull \hbox (badness 2134) in paragraph at lines 218--220
 []\T1/pplx/m/n/10 (+20) Nach wei-te-rer Re-cher-che auch success-
  []
 
 
-LaTeX Warning: Citation `ss2' on page 3 undefined on input line 224.
+LaTeX Warning: Citation `ss2' on page 4 undefined on input line 221.
 
-Package babel Info: Redefining german shorthand "f
-(babel)             in language append on input line 231.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language append on input line 231.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language append on input line 231.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language append on input line 231.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language append on input line 231.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language append on input line 231.
-[3 <./img/p4.png>] (./article_2.bbl
+(./article_2.bbl
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 12.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic settings for font family
@@ -1071,7 +1093,19 @@ Underfull \hbox (badness 2426) in paragraph at lines 16--20
 licht:
  []
 
-
+Package babel Info: Redefining german shorthand "f
+(babel)             in language append on input line 20.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language append on input line 20.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language append on input line 20.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language append on input line 20.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language append on input line 20.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language append on input line 20.
+[4]
 Underfull \hbox (badness 4156) in paragraph at lines 28--32
 []\T1/pplx/m/n/10 (+20) Uli Beth-ke.  Are da-ta la-kes fa-ke
  []
@@ -1168,55 +1202,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--76
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 78--82
+Underfull \hbox (badness 10000) in paragraph at lines 78--82
+\T1/cmtt/m/n/10 how-[]to-[]beat-[]the-[]cap-[]theorem . html$[]\T1/pplx/m/n/10 
+(+20) .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--82
+\T1/pplx/m/n/10 (+20) Ver-öf-fent-licht: 13.10.2011, Zu-griff:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--89
+[]\T1/pplx/m/n/10 (+20) Jay Kreps.  Que-stio-ning the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--89
+\T1/pplx/m/n/10 (+20) lamb-da ar-chi-tec-ture.  []$\T1/cmtt/m/n/10 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--89
+\T1/cmtt/m/n/10 / / www . oreilly . com / ideas /
+ []
+
+
+Overfull \hbox (2.56284pt too wide) in paragraph at lines 84--89
+\T1/cmtt/m/n/10 questioning-[]the-[]lambda-[]architecture$[]\T1/pplx/m/n/10 (-2
+0) .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--89
+\T1/pplx/m/n/10 (+20) Ver-öf-fent-licht: 02.07.2014, Zu-griff:
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 91--95
 []\T1/pplx/m/n/10 (+20) Martin Will-cox.  What is a da-ta la-
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 84--88
+Underfull \hbox (badness 1062) in paragraph at lines 97--101
 []\T1/pplx/m/n/10 (+20) Alex Go-re-lik.  How to build a suc-
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 90--94
+Underfull \hbox (badness 1648) in paragraph at lines 103--107
 \T1/pplx/m/n/10 (+20) part 5: Big da-ta and da-ta ware-hou-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--101
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
 []\T1/pplx/m/n/10 (+20) James Di-xon.  Ja-mes di-xon's
  []
 
 
-Underfull \hbox (badness 3343) in paragraph at lines 96--101
+Underfull \hbox (badness 3343) in paragraph at lines 109--114
 \T1/pplx/m/n/10 (+20) blog: Da-ta la-kes re-vi-si-ted.  []$\T1/cmtt/m/n/10 http
 s :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--101
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
 \T1/cmtt/m/n/10 / / jamesdixon . wordpress . com / 2014 / 09 /
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language append on input line 249.
+(babel)             in language append on input line 246.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language append on input line 249.
+(babel)             in language append on input line 246.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language append on input line 249.
+(babel)             in language append on input line 246.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language append on input line 249.
+(babel)             in language append on input line 246.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language append on input line 249.
+(babel)             in language append on input line 246.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language append on input line 249.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
+(babel)             in language append on input line 246.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
  (./article_2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
 Package rerunfilecheck Info: File `article_2.out' has not changed.
 (rerunfilecheck)             Checksum: C3C88EEEC8D41BD96934FFD96A49DFFF;279.
 
@@ -1226,16 +1297,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 249.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
  ) 
 Here is how much of TeX's memory you used:
- 10687 strings out of 492995
- 162569 string characters out of 6132704
- 291948 words of memory out of 5000000
- 13761 multiletter control sequences out of 15000+600000
- 74353 words of font info for 279 fonts, out of 8000000 for 9000
+ 10739 strings out of 492995
+ 163051 string characters out of 6132704
+ 292040 words of memory out of 5000000
+ 13763 multiletter control sequences out of 15000+600000
+ 76346 words of font info for 310 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,13n,43p,948b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,43p,948b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
@@ -1244,10 +1315,10 @@ ive/2017/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2017
 exmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/font
 s/type1/urw/palatino/uplri8a.pfb>
-Output written on article_2.pdf (4 pages, 3212561 bytes).
+Output written on article_2.pdf (5 pages, 3219589 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
  62005 words of extra memory for PDF output out of 74296 (max. 10000000)
 

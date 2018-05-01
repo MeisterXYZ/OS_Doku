@@ -74,6 +74,19 @@ Matt Kalan.
   \url{https://www.mongodb.com/blog/post/the-future-of-big-data-architecture}.
 \newblock Veröffentlicht: 13.01.2017, Zugriff: 30.04.2018.
 
+\bibitem{src10}
+Nathan Marz.
+\newblock How to beat the cap theorem.
+\newblock \url{http://nathanmarz.com/blog/how-to-beat-the-cap-theorem.html}.
+\newblock Veröffentlicht: 13.10.2011, Zugriff: 29.04.2018.
+
+\bibitem{src11}
+Jay Kreps.
+\newblock Questioning the lambda architecture.
+\newblock
+  \url{https://www.oreilly.com/ideas/questioning-the-lambda-architecture}.
+\newblock Veröffentlicht: 02.07.2014, Zugriff: 29.04.2018.
+
 \bibitem{src13}
 Martin Willcox.
 \newblock What is a data lake, anyway.

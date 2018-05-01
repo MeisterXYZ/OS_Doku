@@ -53,7 +53,9 @@
 \pagestyle{fancy} % All pages have headers and footers
 \fancyhead{} % Blank out the default header
 \fancyfoot{} % Blank out the default footer
-\fancyhead[C]{Running title $\bullet$ May 2016 $\bullet$ Vol. XXI, No. 1} % Custom header text
+\fancyhead[L]{Raphael Drechsler} % Custom header text
+\fancyhead[C]{Oberseminar Datenbanksysteme} % Custom header text
+\fancyhead[R]{Sommersemester 2018} % Custom header text
 \fancyfoot[RO,LE]{\thepage} % Custom footer text
 
 \usepackage{titling} % Customizing the title section
@@ -169,42 +171,37 @@ Die Daten durchlaufen in diesem Prozess die folgenden Schritte.
 	\item Processing: \textit{Das persistierte Datenvolumen wird soweit aufbereitet, dass es für Analysen, Abfragen und schließlich Reports verwendet werden kann. Die Aufbereitung wird durch die Rolle des Data Scientist, welche für das .....DRT \cite{src8}} 
 	\item Bereitstellung für konsumierende Systeme \textit{Die aufbereiteten Daten werden nun den nachgelagerten Systemen bereitgestellt.}
 \end{itemize}
-Wie sich an diesen Prozess die Visualisierung anschließt, ist sehr Kunden- bzw. Anbieter-individuell und variiert von Solution zu Solution.
+Wie sich an diesen Prozess die Visualisierung anschließt variiert - je nach eingesetzten Komponenten - von Solution zu Solution.\\
 
-\paragraph{Detailfragen im Workflow}
-\begin{itemize}
-	\item Storage: \textit{lol}
-	\item Ingestion: \textit{lol}
-	\item Process: \textit{lol}
-	\item Consumption: \textit{lol}
-	\item Monitoring: \textit{lol}
-	\item Data Governance: \textit{lol}
-\end{itemize}
+Im Folgenden sollen einige Detailfragen, die die Beschaffenheit der Komponenten einer Data-Lake-Solution und deren Zusammenspiel betreffen, näher beleuchtet werden.
 
-%\paragraph{Storage}
-%QUELLEN : 8, ?
-%\paragraph{Ingestion}
-%QUELLEN : 8, 10, 11
-%\paragraph{Process}
-%QUELLEN : 8, 12
-%\paragraph{Consumption}
-%QUELLEN : 8, 12
-%\paragraph{Monitoring}
-%QUELLEN : 8, ?
-%\paragraph{Data Governance}
-%QUELLEN : 8, 12
+\paragraph{Storage}
+		Für Storage Anforderung: Alle Daten speichern und getreu nach Dixon's Definition in Rohform. Daher Struct, Semi, un speichern. Folglich kann man da den Sceama on Read, bei dem das Schema beim Lesen also Abfragen aufgesetzt wird und Persistentschicht erstmal alles ok findet. Technologie allem vorran Hadoop zu nennen. Hat sich als on premis breitgemacht weil günstig, skalierbar und viele Tools. Ebenso Online Lösungen Hadoop Basiert. opt: File Based in On-Prmise und Object in online 
+		Hadoops vorteil ist Skalieren nach Scale up. Alles was dem Prinzip folgt ist für DL geeignet.
+		\cite{src8}
+\paragraph{Ingestion}
+		Aufnehmen der Daten in Datalake. Anforderung hierfür, dass sowohl Batch-basiert und Stream- Basiert. Tools bringt Apache mit ...(sb), ...(bb).\cite{src8}
+		Zudem für Echtzeiteinsichten Kombination: Über Lambda-Architektur werden 2 Layers. Das Löst den Konflikt. \cite{src10} Alternativ Kappa. Da macht man das mit nur einem Stream bsaed, das in der Lage ist Replay zu machen. Das bietet den Vorteil, dass nur eine Sprache und weniger Last.\cite{src11} Diese Kombinationen sind dann auch für Processing genutzt - zieht sich ja bis zur Abfrage durch.
+\paragraph{Process}
+		Daten im See. Jetzt Data Scientist Daten für Verwendung aufbereiten. Also erstmal schauen was das ist Data Profiling und festhalten im MetadatenKtalog. Daten zusammenbringen - integration. Wichtig jetzt: Schema hinzufügen. Erst dann kann man die eigentlichen Daten Analysieren. Dabei kann Machine Learning eingesetzt werden. Dann für das Konsumieren bereitstellen. Iterativer Prozess. 
+		Wird Mehrwert generiert muss Prozedur wiederholt werden wenn sich Daten ändern. Also abspeichern als WorkFlow. Dann noch sich wiederholende Aufgaben abspeichern als DataFlow für die Werkzeugkiste des Data Scientist. Opt: Auch überlegen ob Codierung zu colum seperated Files oder Einsatz von NoSQL DB als intergraler Bestandteil von P und S. Ggf. Mehr Administrationsaufwand und Speicher aber auszahlen in Zugriffsgeschwindigkeit und Zugriffsmöglichkeiten.\cite{src8}\cite{src12}
+\paragraph{Consumption}
+		Themen wie Visualisierung und Weboberfläche für Selfservice.\cite{src8}\cite{src12}
+\paragraph{Monitoring}
+		Einsatz von Moniitoring-Tool wie Apache Ambari zum Überwachen der Systemlandschaft.\cite{src8}
+\paragraph{Data Governance}
+		Umfasst ein großes Umfeld und ist in Data Lake ein wunder Punkt. Hierzu im folgenden Abschnitt mehr.
 
 
 \section{Data Swamps: Kritik am Data Lake}
-Mögliche Darstellungen die es so gibt:
+Welche Kritikpunkte am Data-Lake-Konzept bzw. an Data-Lake-Solutions bestehen, wird deutlich, wenn man die existierenden Verbildlichungen von pathologischen Data Lakes betrachtet.
 \begin{itemize}
-	\item Sumpf: findest nix und gehst unter \cite{src3}
-	\item Finnland: heterogen, nicht zu inregreiren \cite{src13}
-	\item Flohmarkt: Findest alles aber wie sucht man?, wem kann man vertrauen? Qualität? \cite{src12}
+	\item Der Data Lake als Sumpf: \textit{Der gespeicherte Data Lake ist nicht zu durchschauen und die Aufbereitung zu abgepackten Mineralwasserflaschen ist unverhältnismäßig aufwendig bis unmöglich.\cite{src3}}
+	\item Der Data Lake als Finnische Seenplatte:  \textit{Der Data Lake ist stark heterogen. Die aus mehreren Quellen im Data Lake vereinigten Datenmengen bilden mehrere voneinander abgetrennte Teil-Seen die nur schwer oder nicht zu integrieren sind\cite{src13}} 
+	\item Der Data Lake als Flohmarkt: \textit{Hier findet man alles. Es stellt sich jedoch die Frage, wie man effizient sucht und welche Qualität die angebotenen Waren (Daten) haben.\cite{src12}} 
 \end{itemize}
 
-Gartners wesentliche Punkte\\
-Aufstieg Data Lake durch scheinbar Löung im Problem. Konzept hat aber Lücken und wenig Substanz. Es kommt zu undergoverned und Meta-Daten-losen Hadoop-Clustern. Dies ist im wesentlichen das was unter dem Begriff Data Swamp verstanden wird.\cite{src3}
+Gartner \footnote{Gartner Inc. - Marktforschung und Analyse von IT-Entwicklungen} beschreibt den Hype von Data Lakes darin begründet, dass das Konzept scheinbar eine Antwort auf die Frage nach mehr Agilität und Verfügbarkeit von Datenanalysen darstellt. Jedoch sein das Konzept des Data Lakes lückenhaft. So kritisiert Gartner im Bericht \textit{''The Data Lake Fallacy: All Water and Little Substance.''}, dass das Aufnehmen sämtlicher Daten aus mehreren Quellen zu einem Data Lake führt, für den sich die benötigten Metadaten nicht ohne Weiteres erstellen oder gewinnen lassen, wodurch die gesammelten Daten ihren Wert verlieren. Zudem führt Gartner als großen Kritikpunkt an, dass das Konzept Data Lake keine Vorgaben zum Thema Data Governance macht.\cite{src3}
 
 Battle: Gartner vs. Dixon und \\
 Dixon setzt sich zur Wehr. Insbesondere Anzahl Quellen: Wassergartenarchitektur.\cite{src15} Auch Metadaten. Macht dazu keine Angaben, aber sagt, dass es nicht heißt, dass nicht.\cite{src14} Auf jeden Fall festhalten: ungenaue Definition.\
