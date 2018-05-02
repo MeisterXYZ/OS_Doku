@@ -87,23 +87,17 @@ Jay Kreps.
   \url{https://www.oreilly.com/ideas/questioning-the-lambda-architecture}.
 \newblock Veröffentlicht: 02.07.2014, Zugriff: 29.04.2018.
 
-\bibitem{src13}
-Martin Willcox.
-\newblock What is a data lake, anyway.
-\newblock \url{https://www.youtube.com/watch?v=NO0r452uQM0&t=835s}.
-\newblock Upload: 10.02.2015, Zugriff: 29.04.2018.
-
 \bibitem{src12}
 Alex Gorelik.
 \newblock How to build a successful data lake: Talk at hadoop summit 2016.
 \newblock \url{https://www.youtube.com/watch?v=zHokpz3qNJ8&t=610s}.
 \newblock Upload: 29.06.2016, Zugriff: 29.04.2018.
 
-\bibitem{src15}
-James Dixon.
-\newblock Pentaho hadoop series part 5: Big data and data warehouses.
-\newblock \url{https://www.youtube.com/watch?v=1CG01JmKp2Y&t=2s}.
-\newblock Upload: 24.10.2012, Zugriff: 29.04.2018.
+\bibitem{src13}
+Martin Willcox.
+\newblock What is a data lake, anyway.
+\newblock \url{https://www.youtube.com/watch?v=NO0r452uQM0&t=835s}.
+\newblock Upload: 10.02.2015, Zugriff: 29.04.2018.
 
 \bibitem{src14}
 James Dixon.
@@ -111,5 +105,32 @@ James Dixon.
 \newblock
   \url{https://jamesdixon.wordpress.com/2014/09/25/data-lakes-revisited/}.
 \newblock Veröffentlicht: 25.09.2014, Zugriff: 29.04.2018.
+
+\bibitem{src15}
+James Dixon.
+\newblock Pentaho hadoop series part 5: Big data and data warehouses.
+\newblock \url{https://www.youtube.com/watch?v=1CG01JmKp2Y&t=2s}.
+\newblock Upload: 24.10.2012, Zugriff: 29.04.2018.
+
+\bibitem{c1}
+Timothy King.
+\newblock 4 data lake tools vendors to watch in 2018.
+\newblock
+  \url{https://solutionsreview.com/data-management/4-data-lake-tools-vendors-to-watch-in-2018/}.
+\newblock Veröffentlicht: 17.04.2018, Zugriff: 02.05.2018.
+
+\bibitem{c2}
+Hitachi Vantara.
+\newblock Hitachi website: Enterprise data lake.
+\newblock
+  \url{https://www.hitachivantara.com/de-de/solutions/data-analytics/enterprise-data-lake.html}.
+\newblock Zugriff: 02.05.2018.
+
+\bibitem{c3}
+Shaun Connolly.
+\newblock Enterprise hadoop and the journey to a data lake.
+\newblock
+  \url{https://de.hortonworks.com/blog/enterprise-hadoop-journey-data-lake/}.
+\newblock Veröffentlicht: 15.03.2014, Zugriff: 02.05.2018.
 
 \end{thebibliography}
