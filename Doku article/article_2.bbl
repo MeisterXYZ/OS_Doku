@@ -133,4 +133,31 @@ Shaun Connolly.
   \url{https://de.hortonworks.com/blog/enterprise-hadoop-journey-data-lake/}.
 \newblock Veröffentlicht: 15.03.2014, Zugriff: 02.05.2018.
 
+\bibitem{s1}
+Matt Spillar.
+\newblock How nissan is harnessing big data to provide value to customers.
+\newblock
+  \url{https://de.hortonworks.com/blog/nissan-harnessing-big-data-provide-value-customers/}.
+\newblock Veröffentlicht: 13.11.2017, Zugriff: 03.05.2018.
+
+\bibitem{s2}
+Hortonworks.
+\newblock Hortonworks kunden: Uc irvine health.
+\newblock \url{https://de.hortonworks.com/customers/uc-irvine-health/}.
+\newblock Zugriff: 03.05.2018.
+
+\bibitem{s3}
+Tom Hastain.
+\newblock Pinsight media connects brands to audiences to be first fueling
+  intelligent ad decisions.
+\newblock
+  \url{https://de.hortonworks.com/blog/pinsight-media-connects-brands-audiences-first-fueling-intelligent-ad-decisions/}.
+\newblock Veröffentlicht: 03.04.2017, Zugriff: 03.05.2018.
+
+\bibitem{s4}
+Zaloni.
+\newblock Zaloni homepage: Solutions: Data lake in a box.
+\newblock \url{https://www.zaloni.com/analytics-ready-data-lake/}.
+\newblock Zugriff: 03.05.2018.
+
 \end{thebibliography}
