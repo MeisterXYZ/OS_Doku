@@ -3,10 +3,9 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: article_2.aux
 The style file: unsrt.bst
 Database file #1: bib.bib.bib
-Warning--I didn't find a database entry for "ss2"
 You've used 25 entries,
             1791 wiz_defined-function locations,
-            566 strings with 7482 characters,
+            565 strings with 7479 characters,
 and the built_in function-call counts, 3437 in all, are:
 = -- 308
 > -- 100
@@ -45,4 +44,3 @@ warning$ -- 0
 while$ -- 26
 width$ -- 27
 write$ -- 277
-(There was 1 warning)

@@ -60,11 +60,16 @@
 
 \usepackage{titling} % Customizing the title section
 
-\usepackage{hyperref} % For hyperlinks in the PDF
+
 
 
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+
+\usepackage{url}
+\usepackage{breakurl}
+\usepackage[breaklinks]{hyperref}
+\def\UrlBreaks{\do\/\do-}
 
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
@@ -85,7 +90,7 @@
 %\normalsize University of Utah \\ % Second author's institution
 %\normalsize \href{mailto:jane@smith.com}{jane@smith.com} % Second author's email address
 }
- \date{30.30.2018} % Leave empty to omit a date
+ \date{60.30.2018} % Leave empty to omit a date
 \renewcommand{\maketitlehookd}{%
 \begin{abstract}
 \noindent 
@@ -215,13 +220,13 @@ Uli Bethke (CEO von Sonra\footnote{Unternehmen für IT und Services mit Sitz in 
 
 Nach einer kurzen Recherche im Internet lassen sich einige Firmen finden, welche Solutions anbieten, die den Gegenstand ''Data Lake'' im Titel tragen. Unter anderem zu nennen sind: HVR, Podium Data, Snowflake, Zaloni\cite{c1}, Hitachi\cite{c2} und Hortonworks\cite{c3}.
 
-Nach weiterer Recherche auch success-stories auffindbar. 
-Zu nennen sind hierbei die Storys von Nissan\cite{s1}, UC Irvine Health\cite{s2} und Pinsight Media\cite{s3} als SS von Kunden von Hortonworks. Auch auf der Website von Zaloni - ''the Data Lake Company'' finden sich kurze, positive Statements von den Kunden CDS Global und Enterprise Strategy Group bezüglich der umgesetzten Lösungen.\cite{s4} .
+Auch bei einer Suche nach erfolgreich umgesetzten Data-Lake-Solutions liefert Ergebnisse. 
+Zu nennen sind hierbei beispielsweise die Success-Storys der Unternehmen Nissan\cite{s1}, UC Irvine Health\cite{s2} und Pinsight Media\cite{s3} als Kunden von Hortonworks. Auch auf der Website von Zaloni - ''the Data Lake Company'' finden sich kurze, positive Statements der Kunden CDS Global und Enterprise Strategy Group bezüglich der umgesetzten Lösungen.\cite{s4}.\\
 
-Im Bsp von UCI Health ist Lösung gut, weil ..............\cite{s2}\\
+Die wesentliche Frage ist jedoch, ob all diese umgesetzten und angebotenen Lösungen das Label einer Data-Lake-Solution tragen sollten. In wie Fern folgen die Lösungen dem ursprünglichen Konzept von Dixon bzw. Pentaho? In wie Fern weichen Sie davon ab? Und ist das ausschlaggebend dafür, dass eine Solution als Data-Lake-Solution gilt? Kurzum: Ohne genaue Definition der Begriffe Data-Lake und Data-Lake-Solution ist es nicht zweifelsfrei möglich Solutions diesen Begriffen unterzuordnen.\\
+Zu einem ähnlichen Schluss kommt auch der Blogeintrag ''Are Data Lakes Fake-News?''. Hier heißt es, dass der Begriff ''Data Lake'' einige nützliche Konzepte (Data Reservoir und self-service analytics) fasst, jedoch letzenendes zu einer ''cath-all-phrase'' für alle Lösungen geworden ist, die nicht zum Thema Data-Warehousing gehören.\cite{src4}\\
 
-Also irgendwie schon. Die wesentliche Frage ist allerdings die Definitionsfrage.\\
-Zu selbem Schluss kommt auch der Blogeintrag ''Are Data Lakes Fake-News?''. Lösung die dem Paradigma grundlegend folgen gibt es. Jetzt im Auge des Betrachters ob man das Kind beim Namen nennt oder nicht.
+Es ist also festzuhalten, dass Lösungen, die der grundlegenden Idee des Data Lakes folgen, existieren. Ob eine solche Solution aus diesem Grund das Label Data-Lake-Solution tragen sollte und welcher Mehrwert sich daraus ergibt obliegt der Einschätzung des Betrachters.
 
 
 %------------------------------------------------
