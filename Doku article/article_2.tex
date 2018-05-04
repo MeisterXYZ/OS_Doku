@@ -173,7 +173,7 @@ Der Workflow in einer Data-Lake-Solution lässt sich wie folgt skizzieren. Dabei
 Die Daten durchlaufen in diesem Prozess die folgenden Schritte.
 \begin{itemize}
 	\item Ingestion: \textit{(engl. für Aufnehmen). Die Daten werden aus den Quell-Systemen bzw. Data-Streams in die Processing and Storage-Layer geladen.}
-	\item Processing: \textit{Das persistierte Datenvolumen wird soweit aufbereitet, dass es für Analysen, Abfragen und schließlich Reports verwendet werden kann. Die Aufbereitung wird durch die Rolle des Data Scientist, welche für das .....DRT \cite{src8}} 
+	\item Processing: \textit{Das persistierte Datenvolumen wird so weit aufbereitet, dass es für Analysen, Abfragen und schließlich Reports verwendet werden kann. Diese Aufbereitung obliegt der Rolle des sogenannten Data Scientist.\cite{src8}} 
 	\item Bereitstellung für konsumierende Systeme \textit{Die aufbereiteten Daten werden nun den nachgelagerten Systemen bereitgestellt.}
 \end{itemize}
 Wie sich an diesen Prozess die Visualisierung anschließt variiert - je nach eingesetzten Komponenten - von Solution zu Solution.\\
@@ -181,17 +181,33 @@ Wie sich an diesen Prozess die Visualisierung anschließt variiert - je nach ein
 Im Folgenden sollen einige Detailfragen, die die Beschaffenheit der Komponenten einer Data-Lake-Solution und deren Zusammenspiel betreffen, näher beleuchtet werden.
 
 \paragraph{Storage}
-		Für Storage Anforderung: Alle Daten speichern und getreu nach Dixon's Definition in Rohform. Daher Struct, Semi, un speichern. Folglich kann man da den Sceama on Read, bei dem das Schema beim Lesen also Abfragen aufgesetzt wird und Persistentschicht erstmal alles ok findet. Technologie allem vorran Hadoop zu nennen. Hat sich als on premis breitgemacht weil günstig, skalierbar und viele Tools. Ebenso Online Lösungen Hadoop Basiert. opt: File Based in On-Prmise und Object in online 
-		Hadoops vorteil ist Skalieren nach Scale up. Alles was dem Prinzip folgt ist für DL geeignet.
+		Für das Speichern des Data Lakes (Datenvolumens) bestehen die Anforderungen, dass zum Einen alle Daten gespeichert werden und dass zum Anderen die Daten getreu Dixon's Definition in Rohform abgelegt werden müssen. Da daher sowohl strukturierte, semi-strukturierte und un-strukturierte Daten gespeichert werden müssen, ist eine sinnvolle Speicherung der Daten in einem RDBMS, welches vor dem Schreiben von Daten in die DB ein Schema voraussetzt (''Sceama on Write''), nicht möglich. Eine Lösung hierbei bietet der ''Sceama on Read''-Ansatz, bei dem jegliche Daten ohne definiertes Schema gespeichert werden und das Schema erst beim Lesen aus der DB über die Querys definiert wird.\\
+		Apache Hadoop folgt diesem Ansatz und hat sich als On-Premise-Speicher für Data-Lake-Solutions durchgesetzt. Es existieren auch Online-Speicher für Data-Lakes, welche auf Hadoop basieren (Google Cloud Platform, Amazon S3, Azure Data Lake).
 		\cite{src8}
 \paragraph{Ingestion}
-		Aufnehmen der Daten in Datalake. Anforderung hierfür, dass sowohl Batch-basiert und Stream- Basiert. Tools bringt Apache mit ...(sb), ...(bb).\cite{src8}
-		Zudem für Echtzeiteinsichten Kombination: Über Lambda-Architektur werden 2 Layers. Das Löst den Konflikt. \cite{src10} Alternativ Kappa. Da macht man das mit nur einem Stream bsaed, das in der Lage ist Replay zu machen. Das bietet den Vorteil, dass nur eine Sprache und weniger Last.\cite{src11} Diese Kombinationen sind dann auch für Processing genutzt - zieht sich ja bis zur Abfrage durch.
+		Für das Aufnehmen der Daten in die Processing and Storage-Layer ist es erforderlich, dass Daten auf jede Art (via Batch oder Streaming) aufgenommen werden können. Apache bietet für beide Arten der Datenaufnahme entsprechende Processing-Systeme an. Als Beispiele seien hier Apache MapReduce, Squoop und Spark als Batch-Processing-Systeme und Apache Flink, Storm und Flume als Streaming-Systeme genannt.\cite{src8}\\
+		Für den Fall, dass im Rahmen der Informationsgewinnung aus dem Data Lake Echtzeiteinsichten bezüglich Streams gewünscht sind, gilt es einen Konflikt zu lösen, der zwischen Verfügbarkeit und Konsistenz der Daten besteht. Die Stream-Daten müssen für spätere Auswertungen im Data-Lake persistiert werden, was jedoch Zeit kostet und die Möglichkeit auf Echtzeiteinsichten verwehrt. Durch den Einsatz einer Lambda-Architektur lässt sich dieser Konflikt dadurch auflösen, dass ein Batch-Processing-Tool (die Batch-Layer) eine Serving-Layer mit Daten beliefert. Eingehende Anfragen werden zu großen Teilen aus dieser Serving-Layer bearbeitet. Das Delta zur Echtzeitinformation wird durch ein zweites, parallel laufendes Streaming-Tool (der Speed-Layer) aufgefüllt. Somit ist sowohl das Persistieren der Daten als auch eine Echtzeitauswertung möglich. \cite{src10} \\
+		
+		BILD ZU LAMBDA\\
+		
+		Eine Alternative zur Lambda-Architektur bietet die Kappa-Architektur. In dieser wird lediglich ein Stream-basiertes Processing-Tool eingesetzt. Dieses ist im Fall einer fehlerhaften Verarbeitung in der Lage mit teilweise persistierte Daten einen sogenannten ''Replay'' auszuführen. Dabei wird ein paralleler Streaming-Job gestartet, bis der Fehler ausgeglichen ist. Dies bietet den Vorteil, dass die entsprecheden Jobs für die Verarbeitung nur noch mit einem Tool implementiert werden müssen.\cite{src11} \\
+		Die Tools für die Datenaufnahme sowie die Lambda- bzw. Kappa-Architektur finden auch in den späteren Prozessen des Workflows (insbesondere Process und ggf. Consumption) Anwendung.
+		
 \paragraph{Process}
-		Daten im See. Jetzt Data Scientist Daten für Verwendung aufbereiten. Also erstmal schauen was das ist Data Profiling und festhalten im MetadatenKtalog. Daten zusammenbringen - integration. Wichtig jetzt: Schema hinzufügen. Erst dann kann man die eigentlichen Daten Analysieren. Dabei kann Machine Learning eingesetzt werden. Dann für das Konsumieren bereitstellen. Iterativer Prozess. 
-		Wird Mehrwert generiert muss Prozedur wiederholt werden wenn sich Daten ändern. Also abspeichern als WorkFlow. Dann noch sich wiederholende Aufgaben abspeichern als DataFlow für die Werkzeugkiste des Data Scientist. Opt: Auch überlegen ob Codierung zu colum seperated Files oder Einsatz von NoSQL DB als intergraler Bestandteil von P und S. Ggf. Mehr Administrationsaufwand und Speicher aber auszahlen in Zugriffsgeschwindigkeit und Zugriffsmöglichkeiten.\cite{src8}\cite{src12}
+		Sind die Daten in den Data-Lake gelangt, muss der Datensee für die Verwendung aufbereitet werden. Die entsprechenden Arbeiten werden von einer Rolle ausgeführt, die im Konzept des Data-Lakes als Data-Scientist bekannt ist.
+		Der Data-Scientist muss zunächst die Daten untersuchen. Er führt ein Profiling der Daten durch und hält seine Ergebnisse sinnvollerweise in einem Metadaten-Katalog fest. Hierbei ist es wichtig zu verstehen, worum es sich bei den vorliegenden Daten handelt, wie ihr ursprüngliches Schema war und wie dich die Daten aus verschiedenen Quellen integrieren lassen. Diese Vorbereitung ist notwendig, um getreu dem ''Schema on Read''-Ansatz nun ein sinnvolles Schema für das Lesen der Daten definieren zu können.\\
+		Anschließend kann die Analyse der eigentlichen Daten und daraufhin die Bereitstellung der Daten für das Konsumieren erfolgen. Dabei können über den gesamten Arbeitsschritt des Processings mehrere Iterationen notwendig sein, um einen Mehrwert in Form eines Informationsgewinnes zu erzeugen.\\
+		Ist ein Mehrwert erzeugt worden, ist es im Hinblick auf die hinzukommenden Daten sinnvoll die auf die Daten angewandten Operationen als sogenannten WorkFlow zu arrangieren und diesen WorkFlow periodisch oder Ereignisgesteuert auf die Daten anzuwenden.\\
+		Ebenfalls kann es dem Data-Scientist von Nutzen sein wiederkehrende, zusammenhängende Operationen als sogenannten DataFlow zu arrangieren, und diese DataFlow künftig als Tools für das Vorbereiten und die Analyse der Daten zu nutzen.\\
+		\cite{src8}\cite{src12}
+		%Weitere mögliche Aufgaben für den Data-Scientsit können die Optimierung der Performance und der 
+		%Opt: Auch überlegen ob Codierung zu colum seperated Files oder Einsatz von NoSQL DB als intergraler Bestandteil von P und S. %Ggf. Mehr Administrationsaufwand und Speicher aber auszahlen in Zugriffsgeschwindigkeit und Zugriffsmöglichkeiten.
+		
 \paragraph{Consumption}
-		Themen wie Visualisierung und Weboberfläche für Selfservice.\cite{src8}\cite{src12}
+		In diesem Abschnitt des Workflows ist zu überlegen, welche Tools die aufbereiteten Daten aus dem Data Lake konsumieren wollen. Es können beispielsweise ..,..,.. beliefert werden.
+		Zusätzlich ist in diesem Bereich zu überlegen, ob BI Tool auf DM oder DWH.
+		Zudem Self-Service für Anfragen auf Data-Lake. Web-Oberfläche für alle Benutzer? Hier spielen Aspekt wie sehr technisch versiert so ein Benutzer.
+		An sich Solution-Abhängig was für konsumierende Tools im Einsatz und wie konzept wer alles auf DL zugreift. Selfservice.\cite{src8}\cite{src12}
 \paragraph{Monitoring}
 		Einsatz von Moniitoring-Tool wie Apache Ambari zum Überwachen der Systemlandschaft.\cite{src8}
 \paragraph{Data Governance}
